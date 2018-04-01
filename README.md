@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+Описание задачи
+Создание диалоговой системы, которая может разговаривать с пользователем на любые темы, производя впечатление умного и интересного собеседника – одна из самых сложных и важных задач искусственного интеллекта в наши дни. Одна из основных подзадач в создании такой системы – генерация или подбор реплик, подходящих по смыслу для данного момента разговора и способных заинтересовать пользователя в продолжении беседы [1].
 
-You can use the [editor on GitHub](https://github.com/JustM57/Alice_yandex_contest_2018/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Существует два основных подхода к решению этой подзадачи – генеративный [4] и поисковый [3]. Подходы первого типа основаны на построении сложной языковой модели, генерирующей реплику на основании контекста разговора, слово за словом. Подходы второго типа предполагают, что «все, что можно было сказать, уже сказано до нас» и, вместо генерации реплики, ищут наиболее подходящую реплику в большой коллекции существующих реплик. Современные подходы обоих типов, как правило, опираются на глубокие нейронные сети разнообразных архитектур.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Наше соревнование сфокусировано на улучшении второго типа подходов – поисковых (на нем, в частности, основана Алиса, диалоговый помощник, разработанный компанией Яндекс [6]). Заметим, что это не значит, что поисковые методы не могут быть улучшены генеративными – такие гибридные подходы существуют тоже [5]. Мы хотели бы, чтобы участники не упустили возможность попробовать и их.
 
-### Markdown
+Мы хотим, чтобы участники нашего соревнования почувствовали себя ближе к созданию настоящего диалогового ассистента, способного увлекательно разговаривать с миллионами пользователей, как это ежедневно делает Алиса.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JustM57/Alice_yandex_contest_2018/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Для этого мы использовали публичную базу диалогов и краудсорсинговую платформу Яндекс.Толока, чтобы собрать датасет, похожий на тот, который используется для обучения Алисы.
